@@ -5,8 +5,12 @@
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "next build",
+    "vercel-build": "next build",
     "start": "next start -p 8080",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:admin": "node seed-admin.mjs",
+    "seed:courses": "node seed-demo-course.mjs",
+    "seed:demo": "node seed-admin.mjs && node seed-demo-course.mjs"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

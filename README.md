@@ -1,5 +1,33 @@
 # EduLearn Backend (Next.js)
 
+## Quick Deploy
+
+Deploy this repo to Vercel with these settings:
+
+- Framework: `Next.js`
+- Root Directory: `./`
+
+Required environment variables:
+
+```bash
+MONGODB_URI=mongodb+srv://...
+MONGODB_DB=edulearn
+JWT_SECRET=replace-with-a-long-random-secret
+CORS_ALLOWED_ORIGINS=https://your-frontend.vercel.app
+CORS_ALLOW_CREDENTIALS=true
+```
+
+After the first deploy, seed demo data locally with:
+
+```bash
+npm run seed:demo
+```
+
+Default admin account after seed:
+
+- Email: `admin@edulearn.local`
+- Password: `Admin@123456`
+
 > Migration branch: `BE`
 
 This is the Node.js/Next.js migration of the Java Spring Boot backend.
